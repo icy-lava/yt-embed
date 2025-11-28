@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "yt-embed",
+	"version": "1.0",
+	"description": "Redirect from YouTube links to embeded version",
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"*://www.youtube.com/*",
+		"*://youtu.be/*"
+	],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	}
+}
